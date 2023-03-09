@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav#menu a#equipe{
+    font-weight: 800;
+}
+
+
+#area-logo {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 165px;
+    margin-top: 110px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+#logo img {
+    width: 600px;
+    margin-top: -50px;
+}
+
+#area-logo h1 {
+    text-indent: -9999px;
+}
+
+#area-logo h3{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #D4BEA7;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+#area-logo h3 strong {
+    font-weight: 600;
+}
+
+#description {
+    text-align: center;
+    font-size: 1.3em;
+    color: #BA804E;
+}
+
+section {
+    width: 1000px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 165px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#production h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 70px 430px 50px 430px;
+    background-color: #000;
+    color: #BA804E;
+}
+
+#divulgation h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 70px 440px 50px 440px;
+    background-color: #000;
+    color: #BA804E;
+}
+
+#thank h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 70px 420px 50px 420px;
+    background-color: #000;
+    color: #BA804E;
+}
+
+section ul {
+    margin: 0px 130px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 35px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    list-style: none;
+    line-height: 2.2;
+    font-size: 1em;
+}
+
+#making-off h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 70px 430px 50px 410px;
+    background-color: #000;
+    color: #BA804E;
+}
+
+#shield-top {
+    width: 400px;
+}
+
+.shield-top {
+    width:450px;
+    height: 433px;
+    margin-bottom: -320px;
+    margin-left: -250px;
+    overflow: hidden;
+}
+
+#double-shield {
+    width: 400px;
+}
+
+.video-imgs {
+    width:200px;
+    height: 433px;
+    margin-top: -420px;
+    margin-left: 1160px;
+    overflow: hidden;
+}
+
+#cut-shield {
+    width: 250px;
+}
+
+.author-img {
+    width:250px;
+    height: 433px;
+    margin-top: -10px;
+    margin-bottom: -380px;
+    margin-left: -120px;
+    overflow: hidden;
+}
+
+.back-imgs {
+    width:250px;
+    height: 250px;
+    margin-top: -270px;
+    margin-left: 1097px;
+    overflow: hidden;
+}
+
+
+
+

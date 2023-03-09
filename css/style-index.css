@@ -96,6 +96,7 @@ section {
 }
 
 #author img {
+    border: 1px solid red;
     margin-left: 20px;
     padding: 20px;
     width: 200px;
@@ -115,6 +116,7 @@ section {
 }
 
 #author-resume {
+    border: 1px solid red;
     float: left;
     width: 60%;
     height: 60%;

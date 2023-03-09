@@ -10,17 +10,22 @@ nav#menu a#equipe{
 
 
 #area-logo {
-    width: 1000px;
+    border: 1px solid red;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    margin-left: 165px;
-    margin-top: 110px;
-    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 8%;
+    margin-bottom: 4%;
     align-items: center;
 }
 
 #logo img {
-    width: 600px;
+    border: 1px solid red;
+    width: 55%;
+    margin-left: 23%;
+    margin-right: 23%;
     margin-top: -50px;
 }
 
@@ -29,8 +34,9 @@ nav#menu a#equipe{
 }
 
 #area-logo h3{
-    margin-top: 30px;
-    margin-bottom: 60px;
+    border: 1px solid red;
+    margin-top: 3%;
+    margin-bottom: 5%;
     text-align: center;
     color: #D4BEA7;
     font-weight: 100;
@@ -42,18 +48,24 @@ nav#menu a#equipe{
 }
 
 #description {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid red;
     text-align: center;
     font-size: 1.3em;
     color: #BA804E;
 }
 
 section {
-    width: 1000px;
+    border: 1px solid red;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 6%;
     float: left;
     display: flex;
     flex-direction: column;
-    margin-left: 165px;
-    margin-top: 20px;
     text-align: center;
 }
 
@@ -62,7 +74,7 @@ section {
     font-weight: 200;
     font-size: 0.8em;
     text-align: center;
-    margin: 70px 430px 50px 430px;
+    margin: 1% 43%;
     background-color: #000;
     color: #BA804E;
 }
@@ -72,7 +84,7 @@ section {
     font-weight: 200;
     font-size: 0.8em;
     text-align: center;
-    margin: 70px 440px 50px 440px;
+    margin: 1% 43%;
     background-color: #000;
     color: #BA804E;
 }
@@ -82,7 +94,7 @@ section {
     font-weight: 200;
     font-size: 0.8em;
     text-align: center;
-    margin: 70px 420px 50px 420px;
+    margin: 1% 43%;
     background-color: #000;
     color: #BA804E;
 }
@@ -106,7 +118,7 @@ section ul {
     font-weight: 200;
     font-size: 0.8em;
     text-align: center;
-    margin: 70px 430px 50px 410px;
+    margin: 1% 43%;
     background-color: #000;
     color: #BA804E;
 }
@@ -131,7 +143,7 @@ section ul {
     width:200px;
     height: 433px;
     margin-top: -420px;
-    margin-left: 1160px;
+    margin-left: 1180px;
     overflow: hidden;
 }
 
@@ -152,7 +164,7 @@ section ul {
     width:250px;
     height: 250px;
     margin-top: -270px;
-    margin-left: 1097px;
+    margin-left: 1130px;
     overflow: hidden;
 }
 

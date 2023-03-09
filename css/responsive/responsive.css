@@ -244,12 +244,22 @@
 }
 
 @media (max-width: 582px) {
+    nav {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     nav a {
         font-size: 0.5em;
     }
 
     #sinopse {
         margin-top: 40%;
+    }
+
+    #sinopse h2 {
+        margin: 40% 40% 5% 40%;
     }
 
     #area-logo h3 {
@@ -306,7 +316,7 @@
     #production, #divulgation, #making-off {
         width: 90%;
         margin: 70% 5% 50% 5%;
-        font-size: 0.8em;
+        font-size: 0.65em;
     }
 
     #production h2 {
@@ -316,7 +326,7 @@
     #thank {
         width: 90%;
         margin: -40% 5% -20% 5%;
-        font-size: 0.8em;
+        font-size: 0.65em;
     }
 
     #contents img {
@@ -338,6 +348,6 @@
     }
 
     #contents {
-        margin-bottom: -50%;
+        margin-bottom: 0%;
     }
 }

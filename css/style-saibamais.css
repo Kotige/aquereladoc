@@ -8,7 +8,6 @@ nav#menu a#saibamais{
 }
 
 #area-logo {
-    border: 1px solid red;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -20,7 +19,6 @@ nav#menu a#saibamais{
 }
 
 #logo img {
-    border: 1px solid red;
     width: 55%;
     margin-left: 23%;
     margin-right: 23%;
@@ -41,7 +39,6 @@ nav#menu a#saibamais{
 }
 
 #description {
-    border: 1px solid red;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
@@ -57,7 +54,6 @@ a, a:visited {
 
 
 #contents {
-    border: 1px solid red;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;

@@ -1,0 +1,19 @@
+@use "../variables/colors" as *;
+
+@use "../utils/mixins" as *;
+
+header {
+    margin: 2rem 1rem 0rem 1rem;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        font-size: .8rem;
+        font-weight: 600;
+        color: $secondary-color;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,11 @@
+@use "./breakpoints" as *;
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and (min-widith: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint #{$breakpoint} does not exist on the map.";
+    }
+}

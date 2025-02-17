@@ -1,0 +1,142 @@
+@use "../variables/colors" as *;
+
+@use "../utils/mixins" as *;
+
+#production {
+    text-align: center;
+    font-weight: 400;
+    h3 {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+    ul {
+        font-size: .8rem;
+        color: $secondary-color;
+        list-style-type: none;
+        span {
+            font-weight: 600;
+        }
+
+        li {
+            margin: .8rem 0;
+        }
+    }
+}
+
+#divulgation {
+    text-align: center;
+    font-weight: 400;
+    h3 {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+    ul {
+        font-size: .8rem;
+        color: $secondary-color;
+        list-style-type: none;
+        span {
+            font-weight: 600;
+        }
+
+        li {
+            margin: .8rem 0;
+        }
+    }
+}
+
+#thanks {
+    text-align: center;
+    font-weight: 400;
+    h3 {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+    ul {
+        font-size: .8rem;
+        color: $secondary-color;
+        list-style-type: none;
+        span {
+            font-weight: 600;
+        }
+
+        li {
+            margin: .8rem 0;
+        }
+    }
+}
+
+#making-off {
+    h3 {
+        text-align: center;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.gallery__column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    min-width: 15.6rem; 
+}
+
+.gallery__thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2);
+
+    &:hover .gallery__image {
+        transform: scale(1.1);
+    }
+
+    &:hover .gallery__caption {
+        opacity: 1;
+    }
+}
+
+.gallery__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: .5rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    font-size: .8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+

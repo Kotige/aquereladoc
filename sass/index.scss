@@ -1,0 +1,20 @@
+// Variables imports
+
+@use "./variables/colors" as *;
+
+//  Structures and pages imports
+
+@use "global";
+
+@use "./structures/header";
+
+@use "./structures/area-logo";
+
+@use "./pages/home";
+
+@use "./pages/knowmore";
+
+@use "./pages/team";
+
+@use "./structures/footer.scss"
+

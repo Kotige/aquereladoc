@@ -1,0 +1,88 @@
+@use "../variables/colors" as *;
+
+@use "../utils/mixins" as *;
+
+#landing {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    img {
+        width: 100%;
+    }
+    h3 {
+        margin-top: .5rem;
+        color: $secondary-color;
+        text-align: center;
+        font-size: .8rem;
+        font-weight: 400;
+
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+#sinopse {
+    text-align: center;
+    color: $primary-color;
+    h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    #video-container {
+        margin-top: 2rem;
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+#author {
+    text-align: center;
+    color: $primary-color;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    #author-img-container {
+        img {
+            margin: 2rem 0;
+            width: 50%;
+        }
+        #img-shield {
+            display: none;
+        }
+    }
+
+    #author-resume {
+        p {
+            font-size: .8rem;
+            margin-bottom: 2rem;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    #author-contact {
+        color: $secondary-color;
+        font-size: .8rem;
+        margin-bottom: 2rem;
+        span {
+            font-weight: 600;
+        }
+    }
+}

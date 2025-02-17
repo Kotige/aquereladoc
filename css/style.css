@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Cinzel", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #FFF;
+}
+
+section {
+  margin: 0 3rem;
+  padding-top: 15vh;
+}
+
+header {
+  margin: 2rem 1rem 0rem 1rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #D4BEA7;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#area-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#area-logo img {
+  width: 80%;
+}
+#area-logo h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  color: #D4BEA7;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#area-logo h3 span {
+  font-weight: 600;
+}
+#area-logo h4 {
+  font-weight: 400;
+  color: #BA804E;
+  font-size: 0.8rem;
+}
+
+#landing {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+}
+#landing img {
+  width: 100%;
+}
+#landing h3 {
+  margin-top: 0.5rem;
+  color: #D4BEA7;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#landing h3 span {
+  font-weight: 600;
+}
+
+#sinopse {
+  text-align: center;
+  color: #BA804E;
+}
+#sinopse h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+#sinopse p {
+  font-size: 0.8rem;
+}
+#sinopse #video-container {
+  margin-top: 2rem;
+}
+#sinopse #video-container iframe {
+  width: 100%;
+  height: auto;
+}
+
+#author {
+  text-align: center;
+  color: #BA804E;
+}
+#author h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+#author #author-img-container img {
+  margin: 2rem 0;
+  width: 50%;
+}
+#author #author-img-container #img-shield {
+  display: none;
+}
+#author #author-resume p {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+#author #author-resume p span {
+  font-weight: 600;
+}
+#author #author-contact {
+  color: #D4BEA7;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+#author #author-contact span {
+  font-weight: 600;
+}
+
+#production {
+  text-align: center;
+  font-weight: 400;
+}
+#production h3 {
+  color: #BA804E;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+#production ul {
+  font-size: 0.8rem;
+  color: #D4BEA7;
+  list-style-type: none;
+}
+#production ul span {
+  font-weight: 600;
+}
+#production ul li {
+  margin: 0.8rem 0;
+}
+
+#divulgation {
+  text-align: center;
+  font-weight: 400;
+}
+#divulgation h3 {
+  color: #BA804E;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+#divulgation ul {
+  font-size: 0.8rem;
+  color: #D4BEA7;
+  list-style-type: none;
+}
+#divulgation ul span {
+  font-weight: 600;
+}
+#divulgation ul li {
+  margin: 0.8rem 0;
+}
+
+#thanks {
+  text-align: center;
+  font-weight: 400;
+}
+#thanks h3 {
+  color: #BA804E;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+#thanks ul {
+  font-size: 0.8rem;
+  color: #D4BEA7;
+  list-style-type: none;
+}
+#thanks ul span {
+  font-weight: 600;
+}
+#thanks ul li {
+  margin: 0.8rem 0;
+}
+
+#making-off h3 {
+  text-align: center;
+  color: #BA804E;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  min-width: 15.6rem;
+}
+
+.gallery__thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.gallery__thumb:hover .gallery__image {
+  transform: scale(1.1);
+}
+.gallery__thumb:hover .gallery__caption {
+  opacity: 1;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+footer {
+  margin: 4rem 3rem;
+  text-align: center;
+  color: #D4BEA7;
+}
+footer h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #BA804E;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+footer img {
+  width: 100%;
+}
+footer h3 {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+footer h4 {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */

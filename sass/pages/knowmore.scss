@@ -2,3 +2,40 @@
 
 @use "../utils/mixins" as *;
 
+#contents {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    p {
+        margin-bottom: 4rem;
+        color: $primary-color;
+    }
+
+    .right-content, .left-content {
+        margin-bottom: 3rem;
+        padding: 3rem 1rem;
+        border: 1px solid $primary-color;
+        border-radius: 2rem;
+        height: 25rem;
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .link {
+            a {
+                text-decoration: none;
+                font-size: .8rem;
+                color: $secondary-color;
+            }
+
+            p {
+                margin-top: 2rem;
+                font-size: .8rem;
+            }
+        }
+    }
+}

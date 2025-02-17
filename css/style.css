@@ -79,6 +79,9 @@ header a {
   text-align: center;
   color: #BA804E;
 }
+#sinopse #sinopse-shield {
+  display: none;
+}
 #sinopse h2 {
   text-transform: uppercase;
   font-weight: 400;
@@ -127,6 +130,37 @@ header a {
 }
 #author #author-contact span {
   font-weight: 600;
+}
+
+#contents {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#contents p {
+  margin-bottom: 4rem;
+  color: #BA804E;
+}
+#contents .right-content, #contents .left-content {
+  margin-bottom: 3rem;
+  padding: 3rem 1rem;
+  border: 1px solid #BA804E;
+  border-radius: 2rem;
+  height: 25rem;
+}
+#contents .right-content img, #contents .left-content img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+#contents .right-content .link a, #contents .left-content .link a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #D4BEA7;
+}
+#contents .right-content .link p, #contents .left-content .link p {
+  margin-top: 2rem;
+  font-size: 0.8rem;
 }
 
 #production {

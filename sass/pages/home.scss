@@ -26,6 +26,11 @@
 #sinopse {
     text-align: center;
     color: $primary-color;
+
+    #sinopse-shield {
+        display: none;
+    }
+
     h2 {
         text-transform: uppercase;
         font-weight: 400;

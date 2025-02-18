@@ -146,7 +146,7 @@ header a {
   padding: 3rem 1rem;
   border: 1px solid #BA804E;
   border-radius: 2rem;
-  height: 25rem;
+  height: fit-content;
 }
 #contents .right-content img, #contents .left-content img {
   width: 100%;

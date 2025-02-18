@@ -21,6 +21,18 @@
             font-weight: 600;
         }
     }
+
+    @include respond-to("tablet") {
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+    @include respond-to("laptop") {
+        h3 {
+            font-size: 1.3rem;
+        }
+    }
 }
 
 #sinopse {
@@ -43,10 +55,37 @@
     }
 
     #video-container {
-        margin-top: 2rem;
+        margin-top: 3rem;
         iframe {
             width: 100%;
-            height: auto;
+            height: 40vh;
+        }
+    }
+
+    @include respond-to("tablet") {
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    @include respond-to("laptop") {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+
+        #video-container {
+            iframe {
+                width: 70%;
+                height: 25rem;
+            }
         }
     }
 }
@@ -88,6 +127,50 @@
         margin-bottom: 2rem;
         span {
             font-weight: 600;
+        }
+    }
+
+    @include respond-to("tablet") {
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        #author-resume p {
+            font-size: 1rem;
+        }
+
+        #author-contact p {
+            font-size: 1rem;
+        }
+    }
+
+    @include respond-to("laptop") {
+        h2 {
+            font-size: 1.5rem;
+        }
+        #author-container {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: space-evenly;
+
+            #author-img-container {
+                flex: 1;
+                img {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+
+            #author-resume {
+                flex: 3;
+                padding: 1rem;
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        #author-contact p {
+            font-size: 1.3rem;
         }
     }
 }

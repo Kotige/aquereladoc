@@ -17,4 +17,8 @@ body {
 section {
     margin: 0 3rem;
     padding-top: 15vh;
+
+    @include respond-to("laptop") {
+        margin: 0 10rem;
+    }
 }

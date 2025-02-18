@@ -25,6 +25,16 @@
             margin: .8rem 0;
         }
     }
+
+    @include respond-to("tablet") {
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        ul {
+            font-size: 1rem;
+        }
+    }
 }
 
 #divulgation {
@@ -48,6 +58,16 @@
 
         li {
             margin: .8rem 0;
+        }
+    }
+
+    @include respond-to("tablet") {
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        ul {
+            font-size: 1rem;
         }
     }
 }
@@ -75,6 +95,16 @@
             margin: .8rem 0;
         }
     }
+
+    @include respond-to("tablet") {
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        ul {
+            font-size: 1rem;
+        }
+    }
 }
 
 #making-off {
@@ -85,6 +115,11 @@
         font-weight: 400;
         margin-bottom: 2rem;
         font-size: 1rem;
+    }
+    @include respond-to("tablet") {
+        h3 {
+            font-size: 1.3rem;
+        }
     }
 }
 

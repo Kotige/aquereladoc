@@ -4,6 +4,8 @@
 
 header {
     margin: 2rem 1rem 0rem 1rem;
+    padding: 0 1.1rem .5rem;
+    border-bottom: 1px solid $primary-color;
 
     nav {
         display: flex;
@@ -15,5 +17,28 @@ header {
         color: $secondary-color;
         text-transform: uppercase;
         text-decoration: none;
+    }
+
+    @include respond-to("tablet") {
+        padding: 0rem 2rem .5rem;
+
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    @include respond-to("inter-screens") {
+        padding: 0rem 4rem .5rem;
+    }
+
+    @include respond-to("laptop") {
+        border: none;
+        nav {
+            justify-content: end;
+
+            a {
+                margin: 0 1rem;
+            }
+        }
     }
 }

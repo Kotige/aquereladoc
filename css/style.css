@@ -14,9 +14,16 @@ section {
   margin: 0 3rem;
   padding-top: 15vh;
 }
+@media screen and (min-width: 1024px) {
+  section {
+    margin: 0 10rem;
+  }
+}
 
 header {
   margin: 2rem 1rem 0rem 1rem;
+  padding: 0 1.1rem 0.5rem;
+  border-bottom: 1px solid #BA804E;
 }
 header nav {
   display: flex;
@@ -29,6 +36,30 @@ header a {
   text-transform: uppercase;
   text-decoration: none;
 }
+@media screen and (min-width: 600px) {
+  header {
+    padding: 0rem 2rem 0.5rem;
+  }
+  header a {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding: 0rem 4rem 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    border: none;
+  }
+  header nav {
+    justify-content: end;
+  }
+  header nav a {
+    margin: 0 1rem;
+  }
+}
 
 #area-logo {
   display: flex;
@@ -36,7 +67,7 @@ header a {
   align-items: center;
 }
 #area-logo img {
-  width: 80%;
+  width: 100%;
 }
 #area-logo h3 {
   margin-top: 0.5rem;
@@ -53,6 +84,22 @@ header a {
   font-weight: 400;
   color: #BA804E;
   font-size: 0.8rem;
+}
+#area-logo p {
+  text-align: center;
+  color: #BA804E;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 600px) {
+  #area-logo h3 {
+    font-size: 1rem;
+  }
+  #area-logo h4 {
+    font-size: 1rem;
+  }
+  #area-logo p {
+    font-size: 1rem;
+  }
 }
 
 #landing {
@@ -74,6 +121,16 @@ header a {
 #landing h3 span {
   font-weight: 600;
 }
+@media screen and (min-width: 600px) {
+  #landing h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #landing h3 {
+    font-size: 1.3rem;
+  }
+}
 
 #sinopse {
   text-align: center;
@@ -92,11 +149,31 @@ header a {
   font-size: 0.8rem;
 }
 #sinopse #video-container {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 #sinopse #video-container iframe {
   width: 100%;
-  height: auto;
+  height: 40vh;
+}
+@media screen and (min-width: 600px) {
+  #sinopse h2 {
+    font-size: 1.3rem;
+  }
+  #sinopse p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #sinopse h2 {
+    font-size: 1.5rem;
+  }
+  #sinopse p {
+    font-size: 1.3rem;
+  }
+  #sinopse #video-container iframe {
+    width: 70%;
+    height: 25rem;
+  }
 }
 
 #author {
@@ -131,6 +208,44 @@ header a {
 #author #author-contact span {
   font-weight: 600;
 }
+@media screen and (min-width: 600px) {
+  #author h2 {
+    font-size: 1.3rem;
+  }
+  #author #author-resume p {
+    font-size: 1rem;
+  }
+  #author #author-contact p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #author h2 {
+    font-size: 1.5rem;
+  }
+  #author #author-container {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #author #author-container #author-img-container {
+    flex: 1;
+  }
+  #author #author-container #author-img-container img {
+    margin: 0;
+    width: 100%;
+  }
+  #author #author-container #author-resume {
+    flex: 3;
+    padding: 1rem;
+  }
+  #author #author-container #author-resume p {
+    font-size: 1.2rem;
+  }
+  #author #author-contact p {
+    font-size: 1.3rem;
+  }
+}
 
 #contents {
   display: flex;
@@ -142,8 +257,9 @@ header a {
   color: #BA804E;
 }
 #contents .right-content, #contents .left-content {
+  flex: 1;
   margin-bottom: 3rem;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 1rem;
   border: 1px solid #BA804E;
   border-radius: 2rem;
   height: fit-content;
@@ -161,6 +277,24 @@ header a {
 #contents .right-content .link p, #contents .left-content .link p {
   margin-top: 2rem;
   font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  #contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  #contents .right-content, #contents .left-content {
+    height: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  #contents .right-content .link a, #contents .left-content .link a {
+    font-size: 0.6rem;
+  }
 }
 
 #production {
@@ -185,6 +319,14 @@ header a {
 #production ul li {
   margin: 0.8rem 0;
 }
+@media screen and (min-width: 600px) {
+  #production h3 {
+    font-size: 1.3rem;
+  }
+  #production ul {
+    font-size: 1rem;
+  }
+}
 
 #divulgation {
   text-align: center;
@@ -207,6 +349,14 @@ header a {
 }
 #divulgation ul li {
   margin: 0.8rem 0;
+}
+@media screen and (min-width: 600px) {
+  #divulgation h3 {
+    font-size: 1.3rem;
+  }
+  #divulgation ul {
+    font-size: 1rem;
+  }
 }
 
 #thanks {
@@ -231,6 +381,14 @@ header a {
 #thanks ul li {
   margin: 0.8rem 0;
 }
+@media screen and (min-width: 600px) {
+  #thanks h3 {
+    font-size: 1.3rem;
+  }
+  #thanks ul {
+    font-size: 1rem;
+  }
+}
 
 #making-off h3 {
   text-align: center;
@@ -239,6 +397,11 @@ header a {
   font-weight: 400;
   margin-bottom: 2rem;
   font-size: 1rem;
+}
+@media screen and (min-width: 600px) {
+  #making-off h3 {
+    font-size: 1.3rem;
+  }
 }
 
 .gallery {
@@ -316,6 +479,35 @@ footer h4 {
   text-transform: uppercase;
   font-size: 0.5rem;
   font-weight: 400;
+}
+@media screen and (min-width: 600px) {
+  footer {
+    margin-top: 6rem;
+  }
+  footer h3 {
+    margin: 1rem 2rem;
+    font-size: 0.8rem;
+  }
+  footer h4 {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer h2 {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+  footer img {
+    width: 70%;
+  }
+  footer h3 {
+    padding: 0 10rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  footer h4 {
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -30,4 +30,36 @@ footer {
         font-size: .5rem;
         font-weight: 400;
     }
+
+    @include respond-to("tablet") {
+        margin-top: 6rem;
+
+        h3 {
+            margin: 1rem 2rem;
+            font-size: .8rem;
+        }
+        h4 {
+            font-size: .6rem;
+        }
+    }
+
+    @include respond-to("laptop") {
+        h2 {
+            margin-bottom: 3rem;
+            font-size: 1.5rem;
+        }
+        img {
+            width: 70%;
+        }
+
+        h3 {
+            padding: 0 10rem;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        h4 {
+            font-size: .8rem;
+        }
+    }
 }

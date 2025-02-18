@@ -13,8 +13,9 @@
     }
 
     .right-content, .left-content {
+        flex: 1;
         margin-bottom: 3rem;
-        padding: 3rem 1rem;
+        padding: 3rem 1rem 1rem;
         border: 1px solid $primary-color;
         border-radius: 2rem;
         height: fit-content;
@@ -35,6 +36,25 @@
             p {
                 margin-top: 2rem;
                 font-size: .8rem;
+            }
+        }
+    }
+
+    @include respond-to("inter-screens") {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        .right-content, .left-content {
+            height: auto;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 1rem;
+
+            .link a {
+                font-size: .6rem;
             }
         }
     }

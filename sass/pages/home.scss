@@ -2,6 +2,7 @@
 
 @use "../utils/mixins" as *;
 
+
 #landing {
     margin-top: 1rem;
     display: flex;
@@ -39,10 +40,6 @@
     text-align: center;
     color: $primary-color;
 
-    #sinopse-shield {
-        display: none;
-    }
-
     h2 {
         text-transform: uppercase;
         font-weight: 400;
@@ -55,7 +52,7 @@
     }
 
     #video-container {
-        margin-top: 3rem;
+        margin-top: 8rem;
         iframe {
             width: 100%;
             height: 40vh;
@@ -78,13 +75,14 @@
         }
 
         p {
+            margin: 0 15rem;
             font-size: 1.3rem;
         }
 
         #video-container {
             iframe {
                 width: 70%;
-                height: 25rem;
+                height: 30rem;
             }
         }
     }
@@ -146,23 +144,28 @@
 
     @include respond-to("laptop") {
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+            margin: 7rem 0;
         }
         #author-container {
-            margin: 2rem 0;
+            margin: 2rem 10rem;
             display: flex;
-            justify-content: space-evenly;
+            // justify-content: start;
 
             #author-img-container {
                 flex: 1;
                 img {
                     margin: 0;
-                    width: 100%;
+                    width:60%;
                 }
             }
 
             #author-resume {
-                flex: 3;
+                border: 1px red solid;
+                border-radius: 15px;
+                text-align: justify;
+                height: fit-content;
+                flex: 2;
                 padding: 1rem;
                 p {
                     font-size: 1.2rem;
@@ -170,6 +173,7 @@
             }
         }
         #author-contact p {
+            margin-top: 5rem;
             font-size: 1.3rem;
         }
     }

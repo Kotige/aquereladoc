@@ -1,0 +1,68 @@
+@use "../variables/colors" as *;
+
+@use "../utils/mixins" as *;
+
+.background-img {
+    img {
+        display: none;
+        @include respond-to("laptop") {
+            display: flex;
+            position: relative;
+            z-index: -1;
+            opacity: .5;
+            overflow-x: hidden;
+        }
+    }
+}
+
+#sinopse-shield {
+    img {
+        @include respond-to("laptop") {
+            top: 15rem;
+            left: -8rem;
+            margin-bottom: -10rem;
+            width: 22rem;
+        }
+    }
+}
+
+#video-shield {
+    img {
+        @include respond-to("laptop") {
+            float: right;
+            top: 35rem;
+            right: 0;
+            margin-bottom: -10rem;
+            width: 10rem;
+            opacity: .6;
+        }
+    }
+}
+
+#author-shield {
+    img {
+        @include respond-to("laptop") {
+            top: 80rem;
+            left: -5rem;
+            margin-bottom: -10rem;
+            width: 13rem;
+            opacity: .8;
+            transform: rotate(-10deg);
+            overflow-x: hidden;
+        }
+    }
+}
+
+#footer-shield {
+    img {
+        @include respond-to("laptop") {
+            bottom: 0;
+            right: 0;
+            margin-bottom: -10rem;
+            width: 22rem;
+            max-width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+        }
+    }
+}

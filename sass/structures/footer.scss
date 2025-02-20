@@ -46,20 +46,20 @@ footer {
     @include respond-to("laptop") {
         h2 {
             margin-bottom: 3rem;
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
         img {
-            width: 70%;
+            width: 50%;
         }
 
         h3 {
-            padding: 0 10rem;
+            padding: 0 15rem;
             margin-bottom: 2rem;
-            font-size: 1rem;
+            font-size: .8rem;
         }
 
         h4 {
-            font-size: .8rem;
+            font-size: .6rem;
         }
     }
 }

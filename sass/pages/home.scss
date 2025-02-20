@@ -7,9 +7,16 @@
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    align-content: start;
+    align-items: center;
+    justify-content: center;
+    @include respond-to("laptop") {
+        height: 80vh;
+    }
     img {
         width: 100%;
+        @include respond-to("laptop") {
+            width: 80%;
+        }
     }
     h3 {
         margin-top: .5rem;

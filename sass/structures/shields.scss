@@ -29,8 +29,7 @@
 #video-shield {
     img {
         @include respond-to("laptop") {
-            float: right;
-            top: 35rem;
+            position: absolute;
             right: 0;
             margin-bottom: -10rem;
             width: 10rem;
@@ -56,13 +55,14 @@
 #footer-shield {
     img {
         @include respond-to("laptop") {
+            position: absolute;
             bottom: 0;
             right: 0;
-            margin-bottom: -10rem;
-            width: 22rem;
-            max-width: 100%;
-            max-height: 100%;
-            overflow: hidden;
+            margin: 0;
+            // left: 80.8rem;
+            // bottom: -5rem;
+            // margin-top: -15rem;
+            width: 15rem;
         }
     }
 }

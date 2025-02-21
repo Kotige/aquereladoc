@@ -68,7 +68,7 @@ header a {
   align-items: center;
 }
 #area-logo img {
-  width: 100%;
+  width: 70%;
 }
 #area-logo h3 {
   margin-top: 0.5rem;
@@ -96,10 +96,12 @@ header a {
     font-size: 1rem;
   }
   #area-logo h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
   }
   #area-logo p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -147,6 +149,7 @@ header a {
 #sinopse {
   text-align: center;
   color: #BA804E;
+  margin-bottom: 5rem;
 }
 #sinopse h2 {
   text-transform: uppercase;
@@ -184,6 +187,78 @@ header a {
     width: 70%;
     height: 30rem;
   }
+}
+
+#doc-watch {
+  text-align: center;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+#doc-watch button {
+  display: inline-block;
+  margin: auto;
+  font-family: inherit;
+  background: none;
+  color: #BA804E;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid #D4BEA7;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+#doc-watch button:hover {
+  background: #BA804E;
+  color: #D4BEA7;
+  font-weight: 600;
+}
+#doc-watch iframe {
+  display: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#doc-watch.fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+#doc-watch.fullscreen button {
+  display: none;
+}
+#doc-watch.fullscreen iframe {
+  display: block;
+  width: 80vw;
+  height: 70vh;
+  max-width: 56.3rem;
+  max-height: 31.3rem;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+#doc-watch .close-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  color: #D4BEA7;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+#doc-watch .close-btn:hover {
+  background: none;
+  color: #BA804E;
 }
 
 #author {
@@ -246,7 +321,7 @@ header a {
     width: 60%;
   }
   #author #author-container #author-resume {
-    border: 1px red solid;
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     text-align: justify;
     height: fit-content;
